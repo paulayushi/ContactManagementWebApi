@@ -25,7 +25,7 @@ namespace ContactManagementAPI.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IActionResult> GetContacts()
         {
-            var contacts = await _repo.GetAllContacts();
+            var contacts=await _repo.GetAllContacts();
             return Ok(contacts);
         }
 
